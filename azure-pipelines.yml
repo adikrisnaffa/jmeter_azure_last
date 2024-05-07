@@ -11,7 +11,7 @@ steps:
   displayName: 'Install the dependency packages'
   
 - script: |
-        apache-jmeter-5.4.1/bin/./jmeter -Jjmeter.reportgenerator.overall_granularity=1000 -n -t test.jmx -l results/results.jtl -j results/output.log -e -o report
+        apache-jmeter-5.6.3/bin/./jmeter -Jjmeter.reportgenerator.overall_granularity=1000 -n -t JMeter.jmx -l results/results.jtl -j results/output.log -e -o report
   displayName: 'Run JMeter'
 
 - script: |
